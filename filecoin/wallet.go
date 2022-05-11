@@ -76,6 +76,9 @@ func (w *Wallet) Transfer(client *Client, fromPath hdwallet.DerivationPath, to s
 	if err != nil {
 		return cid.Undef, err
 	}
+	if toAddr == address.Undef {
+		return cid.Undef, errors.New("empty address")
+	}
 	if amount.Cmp(big.NewInt(0)) <= 0 {
 		return cid.Undef, errors.New("invalid value")
 	}
