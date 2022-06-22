@@ -8,7 +8,7 @@ import (
 	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/go-state-types/abi"
 	big2 "github.com/filecoin-project/go-state-types/big"
-	"github.com/icodeface/hdwallet"
+	"github.com/icodeface/hdkeyring"
 	"github.com/ipfs/go-cid"
 	"github.com/shopspring/decimal"
 	"math/big"
@@ -71,6 +71,6 @@ func CalculateCidsMerkleRoot(cids []cid.Cid) string {
 	return hexutil.Encode(t.MerkleRoot())
 }
 
-func DerivePath(account int64, index int64) hdwallet.DerivationPath {
-	return hdwallet.MustParseDerivationPath(fmt.Sprintf("m/44'/461'/%d'/0/%d", account, index))
+func DerivePath(account int64, index int64) hdkeyring.DerivationPath {
+	return hdkeyring.MustParseDerivationPath(fmt.Sprintf("m/44'/461'/%d'/0/%d", account, index))
 }

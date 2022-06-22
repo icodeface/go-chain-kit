@@ -8,12 +8,13 @@ require (
 	github.com/ethereum/go-ethereum v1.10.13
 	github.com/filecoin-project/go-address v0.0.4
 	github.com/filecoin-project/go-state-types v0.0.0-20201013222834-41ea465f274f
-	github.com/icodeface/hdwallet v1.0.1
+	github.com/gagliardetto/solana-go v1.4.0
+	github.com/icodeface/hdkeyring v1.1.1
 	github.com/ipfs/go-block-format v0.0.2
 	github.com/ipfs/go-cid v0.0.7
 	github.com/mattn/go-isatty v0.0.13 // indirect
 	github.com/minio/blake2b-simd v0.0.0-20160723061019-3f5f724cb5b1
-	github.com/shopspring/decimal v1.2.0
+	github.com/shopspring/decimal v1.3.1
 	github.com/supranational/blst v0.2.0
 	github.com/whyrusleeping/cbor-gen v0.0.0-20200812213548-958ddffe352c
 	golang.org/x/crypto v0.0.0-20210813211128-0a44fdfbc16e // indirect

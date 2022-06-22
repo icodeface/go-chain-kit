@@ -9,7 +9,7 @@ import (
 // The Lotus Node
 // The default token is in ~/.lotus/token
 func testClient() *Client {
-	return NewClient("https://filfox.info/rpc/v0", "")
+	return NewClient("https://fil-rpc.foxnb.net/rpc/v0", "")
 }
 
 // 测试RpcClient
